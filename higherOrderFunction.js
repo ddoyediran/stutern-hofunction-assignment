@@ -74,3 +74,16 @@ function isPrime(aNum, callback){
 console.log(isPrime(8, checkPrime)) // false
 console.log(isPrime(17, checkPrime)) // true
 
+
+// Question 6
+/**
+  Write a function called numberFact which takes in a number and a callback and returns the result of the callback with the number passed to it
+*/
+
+function numberFact(aNum, callback){
+  return callback(aNum);
+}
+
+console.log(numberFact(59, isEven)); // false
+//console.log(numberFact(59, isOdd)); // true
+//console.log(numberFact(59, isPrime)); // true

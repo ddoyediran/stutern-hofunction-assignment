@@ -1,3 +1,5 @@
+// Link to questions - https://docs.google.com/document/d/1Y42yeBU8xxduVQZr1sOO_9hDrcCXlSr2egKlP_aZ0vw/edit#
+
 // Question 1
 /**
  Write a function called countdown that accepts a number as a parameter and every 1000 milliseconds decrements the value and console.logs it. 

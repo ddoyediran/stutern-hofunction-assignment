@@ -128,6 +128,6 @@ function findIndex(anArray, callback){
 }
 
 
-console.log(findIndex([8,11,4,27], function(val){return val >= 10})); // 11
+console.log(findIndex([8,11,4,27], function(val){return val >= 10})); // 1
 console.log(findIndex([8,11,4,27], function(val){return val === 5})); // undefined
 

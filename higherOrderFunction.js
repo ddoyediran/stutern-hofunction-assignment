@@ -19,6 +19,29 @@ function countDown(num){
 countDown(4) // 4, 3, 2, "Done!"
 
 
+// Question 2
+/**
+  Write a function called randomGame that selects a random number between 0 and 1 every 1000 milliseconds and each time that a random number is picked, 
+  add 1 to a counter. If the number is greater than .75, stop the timer and return the number of tries it took before we found a number greater than .75.
+*/
+
+function randomGame(){
+  let randomNum;
+  let countTime = 0;
+  let clearTimer = setInterval(function(){
+    randomNum = Math.random();
+    countTime = countTime + 1;
+    if(randomNum > 0.75){
+      console.log(`It took ${countTime} tries!`)
+      clearInterval(clearTimer);
+    }
+    
+  }, 1000)
+}
+
+randomGame() // 'It took 11 tries!'
+
+
 // Question 3
 /**
   Write a function called isEven which takes in a number and returns true if the number is even and returns false if it is not

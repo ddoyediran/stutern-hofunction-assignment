@@ -96,9 +96,9 @@ console.log(numberFact(59, isEven)); // false
 */
 function find(anArray, callback){
   for(let i = 0; i < anArray.length; i++){
-    let result = callback(anArray[i])
+    //let result = callback(anArray[i])
     
-    if(result){
+    if(callback(anArray[i])){
       return anArray[i]
     }
   }
@@ -118,9 +118,9 @@ console.log(find([8,11,4,27], function(val){return val === 5})); // undefined
 
 function findIndex(anArray, callback){
   for(let i = 0; i < anArray.length; i++){
-    let result = callback(anArray[i])
+    //let result = callback(anArray[i])
     
-    if(result){
+    if(callback(anArray[i])){
       return i
     }
   }

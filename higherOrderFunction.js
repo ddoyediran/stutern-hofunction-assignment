@@ -150,6 +150,7 @@ function find(anArray, callback){
 console.log(find([8,11,4,27], function(val){return val >= 10})); // 11
 console.log(find([8,11,4,27], function(val){return val === 5})); // undefined
 
+
 // Question 8
 /**
   Write a function called findIndex. It should take in an array and a callback and return the index of first value found in the array 

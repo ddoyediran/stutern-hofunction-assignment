@@ -87,3 +87,23 @@ function numberFact(aNum, callback){
 console.log(numberFact(59, isEven)); // false
 //console.log(numberFact(59, isOdd)); // true
 //console.log(numberFact(59, isPrime)); // true
+
+
+
+// Question 7
+/**
+  Write a function called find. It should take in an array and a callback and return the first value found in the array that matches the condition.
+*/
+function find(anArray, callback){
+  for(let i = 0; i < anArray.length; i++){
+    let result = callback(anArray[i])
+    
+    if(result){
+      return anArray[i]
+    }
+  }
+  
+}
+
+console.log(find([8,11,4,27], function(val){return val >= 10})); // 11
+console.log(find([8,11,4,27], function(val){return val === 5})); // undefined

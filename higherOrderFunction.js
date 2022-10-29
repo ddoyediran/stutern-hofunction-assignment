@@ -19,7 +19,6 @@ function countDown(num){
 countDown(4) // 4, 3, 2, "Done!"
 
 
-
 // Question 3
 /**
   Write a function called isEven which takes in a number and returns true if the number is even and returns false if it is not
@@ -91,7 +90,6 @@ function isPrime(aNum, callback){
   return callback(aNum);
 }
 
-
 console.log(isPrime(8, checkPrime)) // false
 console.log(isPrime(17, checkPrime)) // true
 
@@ -129,8 +127,6 @@ function find(anArray, callback){
 console.log(find([8,11,4,27], function(val){return val >= 10})); // 11
 console.log(find([8,11,4,27], function(val){return val === 5})); // undefined
 
-
-
 // Question 8
 /**
   Write a function called findIndex. It should take in an array and a callback and return the index of first value found in the array 
@@ -148,10 +144,8 @@ function findIndex(anArray, callback){
   
 }
 
-
 console.log(findIndex([8,11,4,27], function(val){return val >= 10})); // 1
 console.log(findIndex([8,11,4,27], function(val){return val === 5})); // undefined
-
 
 
 // Question 9
@@ -169,7 +163,6 @@ function specialMultiply(num1, num2){
     return num1 * num2;
   }
 }
-
 
 console.log(specialMultiply(3)(4)) // 8
 console.log(specialMultiply(3, 4)) // 12

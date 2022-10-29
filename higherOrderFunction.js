@@ -18,3 +18,26 @@ function isEven(aNum, callback){
 
 console.log(isEven(2, checkEven)) // true
 console.log(isEven(3, checkEven)) // false
+
+
+// Question 4
+/**
+  Write a function called isOdd which takes in a number and returns true if the number is odd and returns false if it is not
+*/
+
+function checkOdd(num){
+  if(num % 2 === 0){
+    return false
+  }
+  
+  return true
+}
+
+function isOdd(aNum, callback){
+  return callback(aNum);
+}
+
+
+console.log(isOdd(3, checkOdd)) // true
+
+console.log(isOdd(14, checkOdd)) // false

@@ -41,3 +41,36 @@ function isOdd(aNum, callback){
 console.log(isOdd(3, checkOdd)) // true
 
 console.log(isOdd(14, checkOdd)) // false
+
+
+// Question 5
+/**
+  Write a function called isPrime which takes in a number and returns true if the number is a prime number (is greater than 1 and can only 
+  be divided in whole by itself and 1), otherwise returns false
+*/
+
+function checkPrime(num){
+  // number less than 2 are not prime number including negative number
+  if(num < 2){
+    return false;
+  }
+  
+  for(let i = 2; i < num; i++){
+    // check if it is divisible by other number apart from it self
+    if(num % i === 0){ 
+      return false;
+    }
+  }
+  
+  return true; // esle the nume is a prime number
+}
+
+
+function isPrime(aNum, callback){
+  return callback(aNum);
+}
+
+
+console.log(isPrime(8, checkPrime)) // false
+console.log(isPrime(17, checkPrime)) // true
+

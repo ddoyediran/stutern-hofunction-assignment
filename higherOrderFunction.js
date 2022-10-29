@@ -16,8 +16,9 @@ function countDown(num){
   }, 1000) 
 }
 
+countDown(4) // 4, 3, 2, "Done!"
 
-countDown(4)
+
 
 // Question 3
 /**
